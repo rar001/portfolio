@@ -39,13 +39,25 @@
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Robert
-                        <span style="color:mediumaquamarine">Ramirez</span>
+                        <span style="color:mediumaquamarine">Ramirez</span> <span id="mario" class="hidden"><img src="assets/img/coinblock.gif" alt="marioblock" onclick='playGif(this)'></span>
+                        <script>
+                            function playGif(gif_img) {
+                             new Audio("assets/smw_coin.wav").play();           
+                             if (gif_img.src.endsWith(".png"))
+                             {
+                              gif_img.src = gif_img.src.substring(0, gif_img.src.length - 3) + "gif";
+                             } else 
+                             {
+                              gif_img.src = gif_img.src.substring(0, gif_img.src.length - 3) + "gif";
+                             }    
+                            }
+                        </script>
                     </h1>
                     <div class="subheading mb-5">
                         Street Address · City, Zip · Phone Number <br>
-                        <a href="mailto:name@email.com" style="color:mediumaquamarine;">2000rramirez@gmail.com</a>
+                        <a href="mailto:name@email.com" style="color:mediumaquamarine;">2000rramirez@gmail.com </a>
                     </div>
-                    <p class="lead mb-5">I am a UCSD Undergraduate studying Cognitive Science with a Specialization in Design Interaction. Here is where I you can view my projects as well as get to know a little about my workflow. Feel free to take a look below!</p>
+                    <p class="lead mb-5">I am a UCSD Undergraduate studying Cognitive Science with a Specialization in Design Interaction. Here is where you can view my projects as well as get to know a little about my workflow. Feel free to take a look below!</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/robert-ramirez-9701a01b9/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/rar001"><i class="fab fa-github"></i></a>

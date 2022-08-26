@@ -11420,6 +11420,22 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+.hidden 
+    {
+      width:48px;
+      height:48px;
+      display: inline-flex; 
+      justify-content: right; 
+      align-items: right;
+    }
+    .hidden img{
+        display:none;
+    }
+    .hidden:hover img{
+        display:block;
+    }
+  
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
